@@ -1,4 +1,5 @@
-from .models import Projects
+from .models import Projects, Votes, Comments
+from django import forms
 
 class PostForm(forms.ModelForm):
     class Meta:
@@ -9,4 +10,12 @@ class PostForm(forms.ModelForm):
 class RateForm(forms.ModelForm):
     class Meta:
         model = Votes
-        exclude = ['user','project']        
+        exclude = ['user','project']  
+
+
+class CommentForm(forms.ModelForm):
+    class Meta:
+        model = Comments
+        exclude = ['user','pro_id']        
+
+
