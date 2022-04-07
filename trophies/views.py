@@ -45,7 +45,9 @@ def post(request):
         form = PostForm()
     return render(request, "post.html", {"form": form})
 
-def project_detail(request, project_id):
+
+
+def projectDetail(request, project_id):
     try:
         projects = Projects.objects.filter(id=project_id)
         all = Votes.objects.filter(project=project_id)
