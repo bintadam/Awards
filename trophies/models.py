@@ -36,3 +36,11 @@ class Profile(models.Model):
 
     class Meta:
         ordering = ['-image']
+
+
+class Votes(models.Model):
+    design = models.PositiveIntegerField(default=0,validators=[MaxValueValidator(10)])
+    usability = models.PositiveIntegerField(default=0,validators=[MaxValueValidator(10)])
+    content = models.PositiveIntegerField(default=0, validators=[MaxValueValidator(10)])
+    user = models.ForeignKey(User, on_delete=CASCADE)
+    project = models.IntegerField(default=0)        
