@@ -1,10 +1,23 @@
 from django.shortcuts import render, redirect
-from .forms import PostForm
+from .forms import PostForm,  CommentForm, RateForm, UpdateForm
+from .models import Projects, Votes, Comments, Profile
+from django.contrib.auth.models import User
+from django.http import Http404, HttpResponseRedirect
+from rest_framework.response import Response
+from rest_framework.views import APIView
+from .serializers import ProfileSerializer,  ProjectSerializer
+
 
 
 # Create your views here.
 def homePage(request):
-    return render(request, 'home.html')
+    try:
+        projects = Projects.objects.all()
+    except Exception as e:
+        raise Http404()
+    return render(
+        request, "home.html", {"projects": projects}
+    ) 
 
 
 def userProfile(request):
