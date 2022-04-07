@@ -162,6 +162,12 @@ def projectDetail(request, project_id):
     )    
 
 
+@login_required
+def logout(request):
+    django_logout(request)
+    return  HttpResponseRedirect('/')    
+
+
 class ProfileList(APIView):
     def get(self,request,format=None):
         all_profiles = Profile.objects.all()
