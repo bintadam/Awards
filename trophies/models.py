@@ -1,7 +1,9 @@
 from django.db import models
+from typing import Callable
 from cloudinary.models import CloudinaryField
 from django.contrib.auth.models import User
 from django.db.models.deletion import CASCADE
+from django.core.validators import MaxValueValidator
 
 # Create your models here.
 
