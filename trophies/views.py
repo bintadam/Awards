@@ -37,12 +37,12 @@ def userProfile(request):
             profile = form.save(commit=False)
             profile.user = request.user
             profile.save()
-        return redirect("user_profile")
+        return redirect("userProfile")
     else:
         form = UpdateForm()
     return render(
         request,
-        "user_profile.html",
+        "userProfile.html",
         {"form": form, "profile": wasifu, "projects": user_projects},
     )    
 
@@ -56,7 +56,7 @@ def post(request):
             post = form.save(commit=False)
             post.user = current_user
             post.save()
-        return redirect("home_page")
+        return redirect("homePage")
     else:
         form = PostForm()
     return render(request, "post.html", {"form": form})
@@ -69,7 +69,7 @@ def search(request):
 
         return render(request, "search.html", {"projects": results})
     else:
-        message = "You havent searched any project"
+        message = "No projects searched"
         return render(request, "search.html", {"message": message})
 
 
