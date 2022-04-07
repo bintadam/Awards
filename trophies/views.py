@@ -21,7 +21,7 @@ def homePage(request):
         request, "home.html", {"projects": projects}
     ) 
 
-
+@login_required(login_url = '/accounts/login/')
 def userProfile(request):
     current_user = request.user
     try:
@@ -47,6 +47,7 @@ def userProfile(request):
     )    
 
 
+@login_required(login_url = '/accounts/login/')
 def post(request):
     current_user = request.user
     if request.method == "POST":
@@ -60,6 +61,16 @@ def post(request):
         form = PostForm()
     return render(request, "post.html", {"form": form})
 
+
+def search(request):
+    if "name" in request.GET and request.GET["name"]:
+        term = request.GET.get("name")
+        results = Projects.search_project(term)
+
+        return render(request, "search.html", {"projects": results})
+    else:
+        message = "You havent searched any project"
+        return render(request, "search.html", {"message": message})
 
 
 def projectDetail(request, project_id):
