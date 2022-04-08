@@ -292,7 +292,7 @@ section#gallery {
 }
 
 .popup .close:hover {
-    color: #30c39e;
+    color: rgba(0, 0, 0, 0.342);
 }
 
 @media (max-width: 1440px) {
@@ -943,7 +943,7 @@ textarea.text-input {
     display: inline-block;
     height: 60px;
     padding: 0 35px;
-    background-color: #49c5b6;
+    background-color: rgba(0, 0, 0, 0.342);
     color: #fff;
     line-height: 63px;
     text-align: center;
@@ -1061,12 +1061,12 @@ textarea.text-input {
 
 .button.border-green {
     background-color: transparent;
-    border: 1px solid #49c5b6;
-    color: #49c5b6
+    border: 1px solid rgba(0, 0, 0, 0.342);
+    color: rgba(0, 0, 0, 0.342)
 }
 
 .button.border-green .ico-svg {
-    fill: #49c5b6
+    fill: rgba(0, 0, 0, 0.342)
 }
 
 .button.border-green:hover .ico-svg {
@@ -1082,7 +1082,7 @@ textarea.text-input {
 }
 
 .button.button-follow .stats {
-    color: #49c5b6;
+    color: rgba(0, 0, 0, 0.342);
     transition: color 0.3s ease-in-out
 }
 
@@ -1092,7 +1092,7 @@ textarea.text-input {
 }
 
 .button.button-follow .stats .ico-svg {
-    fill: #49c5b6;
+    fill: rgba(0, 0, 0, 0.342);
     vertical-align: middle
 }
 
@@ -1130,8 +1130,8 @@ textarea.text-input {
 
 .button.button-follow:not(.is-loading):hover,
 .button.button-follow.active {
-    background-color: #49c5b6;
-    border-color: #49c5b6;
+    background-color: rgba(0, 0, 0, 0.342);
+    border-color: rgba(0, 0, 0, 0.342);
     color: #fff
 }
 
@@ -1142,19 +1142,19 @@ textarea.text-input {
 
 .button.is-loading {
     cursor: default;
-    background-color: #49c5b6;
-    border-color: #49c5b6;
+    background-color: rgba(0, 0, 0, 0.342);
+    border-color: rgba(0, 0, 0, 0.342);
     color: #fff
 }
 
 .button:hover {
     color: #fff;
-    background-color: #42AB9E
+    background-color: rgba(0, 0, 0, 0.342)
 }
 
 .button.active {
-    background-color: #49c5b6;
-    border-color: #49c5b6;
+    background-color: rgba(0, 0, 0, 0.342);
+    border-color: rgba(0, 0, 0, 0.342);
     color: #fff
 }
 
@@ -1189,7 +1189,7 @@ textarea.text-input {
     left: 0;
     width: 0;
     height: 100%;
-    background: #368c81;
+    background: rgba(0, 0, 0, 0.342);
     opacity: 0;
     transition: all 0.3s;
     -webkit-animation: btProgress 0.2s 1 linear forwards;
@@ -1422,7 +1422,7 @@ textarea.text-input {
   line-height: 60px;
   font-size: 13px;
   text-align: center;
-  background-color: #49c5b6;
+  background-color: rgba(0, 0, 0, 0.342);
   color: #fff;
   transition: all 0.3s ease-in-out
 }
@@ -1816,7 +1816,7 @@ body.filters #search-result {
 }
 
 a {
-  color: #49c5b6;
+  color: rgba(0, 0, 0, 0.342);
   text-decoration: none;
   transition: color 0.3s ease-in-out
 }
@@ -2012,15 +2012,15 @@ button {
 
 .link-2 {
   display: inline-block;
-  color: #49c5b6 !important;
-  border-bottom: 1px solid rgba(73, 197, 182, 0.5);
+  color: rgba(0, 0, 0, 0.342) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.342);
   line-height: normal;
   cursor: pointer;
   transition: all 0.3s ease-in-out
 }
 
 .link-2:hover {
-  border-color: #49c5b6
+  border-color: rgba(0, 0, 0, 0.342)
 }
 
 .link-3 {
@@ -2037,7 +2037,7 @@ button {
 }
 
 .link {
-  color: #49c5b6;
+  color: rgba(0, 0, 0, 0.342);
   cursor: pointer
 }
 
@@ -2118,7 +2118,7 @@ a.text-black:hover {
 }
 
 .text-green {
-  color: #49c5b6
+  color: rgba(0, 0, 0, 0.342)
 }
 
 .text-red {
@@ -2309,7 +2309,7 @@ a.text-black:hover {
 }
 
 .ico-svg.fill-green {
-  fill: #49c5b6 !important
+  fill: rgba(0, 0, 0, 0.342) !important
 }
 
 .ico-svg.fill-red {
@@ -2325,7 +2325,7 @@ a.text-black:hover {
 }
 
 a:hover .ico-svg {
-  fill: #49c5b6
+  fill: rgba(0, 0, 0, 0.342)
 }
 
 .ico-check {
@@ -2336,7 +2336,7 @@ a:hover .ico-svg {
 }
 
 .ico-check.color-green:before {
-  border-color: #49c5b6
+  border-color: rgba(0, 0, 0, 0.342)
 }
 
 .ico-check.color-red:before {
@@ -2421,7 +2421,7 @@ a:hover .ico-svg {
 }
 
 .ico-filename.style-green {
-  border-color: #49c5b6
+  border-color: rgba(0, 0, 0, 0.342)
 }
 
 a:hover .ico-filename {
@@ -2456,7 +2456,7 @@ a:hover .ico-filename {
 .heart-pulsate .ico-svg {
   float: left;
   height: 25px;
-  fill: #6DEECD
+  fill: rgba(0, 0, 0, 0.342)
 }
 
 @-webkit-keyframes heartPulsate {
@@ -2543,15 +2543,15 @@ a:hover .ico-filename {
 }
 
 .bt-like.active {
-  color: #49c5b6
+  color: rgba(0, 0, 0, 0.342)
 }
 
 .bt-like.active .circle {
-  stroke: #49c5b6
+  stroke: rgba(0, 0, 0, 0.342)
 }
 
 .bt-like.active .ico-svg {
-  fill: #49c5b6
+  fill: rgba(0, 0, 0, 0.342)
 }
 
 .bt-like.active .ico-svg {
@@ -2672,8 +2672,8 @@ a:hover .ico-filename {
 }
 
 .bt-default.green {
-  color: #49c5b6;
-  border-color: #49c5b6
+  color: rgba(0, 0, 0, 0.342);
+  border-color: rgba(0, 0, 0, 0.342)
 }
 
 .bt-default.gray {
@@ -2702,7 +2702,7 @@ a:hover .ico-filename {
 }
 
 .bt-default.black-fill:hover {
-  background-color: #49c5b6;
+  background-color: rgba(0, 0, 0, 0.342);
   color: #fff
 }
 
@@ -2718,9 +2718,9 @@ a:hover .ico-filename {
 }
 
 .bt-default.green-fill {
-  border-color: #49c5b6;
+  border-color: rgba(0, 0, 0, 0.342);
   color: #fff;
-  background-color: #49c5b6;
+  background-color: rgba(0, 0, 0, 0.342);
   font-weight: 500
 }
 
@@ -2746,8 +2746,8 @@ a:hover .ico-filename {
 .bt-default.active,
 .bt-default.active:hover {
   color: #fff;
-  border-color: #49c5b6;
-  background-color: #49c5b6
+  border-color: black;
+  background-color: black;
 }
 
 .bt-default.active .ico-svg,
@@ -2760,15 +2760,15 @@ a:hover .ico-filename {
 }
 
 .bt-default.bt-likeit.liked {
-  border-color: #49c5b6 !important
+  border-color: rgba(0, 0, 0, 0.342) !important
 }
 
 .bt-default.bt-likeit.liked .ico-svg {
-  fill: #49c5b6
+  fill: rgba(0, 0, 0, 0.342)
 }
 
 .bt-default.bt-likeit.liked .number {
-  color: #49c5b6
+  color: rgba(0, 0, 0, 0.342)
 }
 
 .bt-default.bt-likeit.liked .ico-svg {
@@ -2783,8 +2783,8 @@ a:hover .ico-filename {
 .bt-default.active,
 .bt-default.active:hover {
   color: #fff;
-  border-color: #49c5b6;
-  background-color: #49c5b6
+  border-color: rgba(0, 0, 0, 0.342);
+  background-color: rgba(0, 0, 0, 0.342)
 }
 
 .bt-default.active .ico-svg,
@@ -2885,24 +2885,24 @@ a:hover .ico-filename {
 .bt-default.bt-laurel:hover .corner:after,
 .bt-default.bt-laurel:hover .borders:before,
 .bt-default.bt-laurel:hover .borders:after {
-  border-color: #49c5b6
+  border-color: rgba(0, 0, 0, 0.342)
 }
 
 .bt-default.bt-laurel:hover svg {
-  fill: #49c5b6
+  fill: rgba(0, 0, 0, 0.342)
 }
 
 .bt-default:hover {
-  color: #49c5b6;
-  border-color: #49c5b6
+  color: rgba(0, 0, 0, 0.342);
+  border-color: rgba(0, 0, 0, 0.342)
 }
 
 .bt-default:hover .ico-svg {
-  fill: #49c5b6
+  fill: rgba(0, 0, 0, 0.342)
 }
 
 .bt-default:hover .ico-filename {
-  border-color: #49c5b6
+  border-color: rgba(0, 0, 0, 0.342)
 }
 
 .bt-default .ico-svg {
@@ -2974,11 +2974,11 @@ a:hover .ico-filename {
 }
 
 .bt-page:hover {
-  border-color: #49c5b6
+  border-color: rgba(0, 0, 0, 0.342)
 }
 
 .bt-page:hover:before {
-  border-color: #49c5b6
+  border-color: rgba(0, 0, 0, 0.342)
 }
 
 .bt-page.bt-next:before {
@@ -3008,15 +3008,15 @@ a:hover .ico-filename {
 }
 
 .bt-info-site:hover {
-  border-color: #49c5b6 !important
+  border-color: rgba(0, 0, 0, 0.342) !important
 }
 
 .bt-info-site:hover .bt-content {
-  color: #49c5b6 !important
+  color: rgba(0, 0, 0, 0.342) !important
 }
 
 .bt-info-site:hover svg {
-  stroke: #49c5b6 !important
+  stroke: rgba(0, 0, 0, 0.342) !important
 }
 
 .bt-info-site .bt-content {
@@ -3059,8 +3059,8 @@ a:hover .ico-filename {
 }
 
 .bt-check.active {
-  border-color: #49c5b6 !important;
-  background-color: #49c5b6
+  border-color: rgba(0, 0, 0, 0.342) !important;
+  background-color: rgba(0, 0, 0, 0.342)
 }
 
 .bt-check.active .bt-content:before {
@@ -3200,8 +3200,8 @@ a:hover .ico-filename {
 }
 
 .bt-info:hover {
-  border-color: #49c5b6;
-  color: #49c5b6
+  border-color: rgba(0, 0, 0, 0.342);
+  color: rgba(0, 0, 0, 0.342)
 }
 
 .bt-info:before {
@@ -3485,7 +3485,7 @@ a:hover .ico-filename {
 }
 
 .nav-main .menu li.active .item-link {
-  color: #49c5b6
+  color: rgba(0, 0, 0, 0.342)
 }
 
 .nav-main .menu li [data-count]:not([data-count=""]):after {
@@ -3628,7 +3628,7 @@ a:hover .ico-filename {
 .nav-main a .soon {
   opacity: 0;
   padding-left: 10px;
-  color: #49c5b6;
+  color: rgba(0, 0, 0, 0.342);
   transition: all 0.3s ease-in-out
 }
 

@@ -58,7 +58,7 @@
             </form>
           </div>
           {% else %}
-          <p class="alert alert-info">Thank You for Rating This app</p>
+          <p class="alert alert-info">Thank You for Rating</p>
           {% endif %} {% else %}
           <a href="/registration/login/"
             ><button
@@ -90,22 +90,13 @@
         Design
       </button>
       <button class="btn btn-outline-default" type="button" name="button">
-        Fashion
+        Python
       </button>
       <button class="btn btn-outline-default" type="button" name="button">
         Creativity
       </button>
       <button class="btn btn-outline-default" type="button" name="button">
         Django
-      </button>
-      <button class="btn btn-outline-default" type="button" name="button">
-        Mobile & Apps
-      </button>
-      <button class="btn btn-outline-default" type="button" name="button">
-        Node.js
-      </button>
-      <button class="btn btn-outline-default" type="button" name="button">
-        App Style
       </button>
       <button class="btn btn-outline-default" type="button" name="button">
         Content
@@ -119,15 +110,7 @@
       <button class="btn btn-outline-default" type="button" name="button">
         Usability
       </button>
-      <button class="btn btn-outline-default" type="button" name="button">
-        Creativity
-      </button>
-      <button class="btn btn-outline-default" type="button" name="button">
-        Python
-      </button>
-      <button class="btn btn-outline-default" type="button" name="button">
-        Chart.js
-      </button>
+
     </div>
     {% endfor %}
   </div>
@@ -180,8 +163,8 @@
 
                 <td>
                   <b class="tt">
-                    <i style="color: red" class="far fa-star"></i>
-                    <i style="color: red" class="far fa-star"></i>
+                    <i style="color: black" class="far fa-star"></i>
+                    <i style="color: black" class="far fa-star"></i>
                     <i class="far fa-star"></i>
                   </b>
                 </td>
@@ -189,7 +172,7 @@
               {% endfor %}
             </table>
             {% else %}
-            <li class="list-group-item alert alert-info">No votes Available</li>
+            <li class="list-group-item alert alert-info">No votes</li>
             {% endif %}
           </ul>
         </div>
@@ -227,9 +210,9 @@
         </button>
       </form>
       {% endfor %} {% else %}
-      <a href="/registration/login/">
+      <a href="/registration/login//">
         <button class="btn btn-outline-default" type="submit" name="button">
-          Please sign in first
+          Login first
         </button>
       </a>
       {% endif %}
