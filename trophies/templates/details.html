@@ -19,11 +19,11 @@
             <strong> {{average}}</strong>
           </p>
           <div class="design">
-            <a target="_blank" href="{{ pro.link }}">{{ design }}</a>
-            <i id="de">design</i>
             <a target="_blank" href="{{ pro.link }}">{{ usability }}</a>
+            <i id="de">design</i>
+            <a target="_blank" href="{{ pro.link }}">{{ content }}</a>
             <i id="us">usability</i>
-            <a target="_blank" class="b" href="{{ pro.link }}">{{ content }}</a>
+            <a target="_blank" class="b" href="{{ pro.link }}">{{ design }}</a>
             <i id="con">content</i>
           </div>
         </div>
@@ -90,10 +90,7 @@
         Design
       </button>
       <button class="btn btn-outline-default" type="button" name="button">
-        Python
-      </button>
-      <button class="btn btn-outline-default" type="button" name="button">
-        Creativity
+        Usability
       </button>
       <button class="btn btn-outline-default" type="button" name="button">
         Django
@@ -107,9 +104,7 @@
       <button class="btn btn-outline-default" type="button" name="button">
         Design
       </button>
-      <button class="btn btn-outline-default" type="button" name="button">
-        Usability
-      </button>
+
 
     </div>
     {% endfor %}
@@ -120,7 +115,7 @@
   <div class="row">
     <div class="col-md-12 d-flex justify-content-center">
       <div class="links">
-        <a href="#shots">Screenshots</a>. <a href="#comm">Jury votes</a>.
+        <a href="#shots">Screenshots</a>. <a href="#comm">votes</a>.
         <a href="#om">Comments</a>
       </div>
     </div>
@@ -155,9 +150,9 @@
                 <td>{{ us.user }}</td>
                 <td>
                   <div class="dsign">
-                    <a href="">{{ us.design }}.0</a>
                     <a href="">{{ us.usability }}.0</a>
-                    <a class="b" href="">{{ us.content }}.0</a>
+                    <a href="">{{ us.content }}.0</a>
+                    <a class="b" href="">{{ us.design }}.0</a>
                   </div>
                 </td>
 
@@ -172,7 +167,7 @@
               {% endfor %}
             </table>
             {% else %}
-            <li class="list-group-item alert alert-info">No votes</li>
+            <li class="list-group-item alert alert-info"></li>
             {% endif %}
           </ul>
         </div>
@@ -193,7 +188,6 @@
         <i>by {{ comment.user }}</i>
         <hr />
         {% endfor %} {% else %}
-        <p class="alert alert-info">Be the first one to comment</p>
         {% endif %}
       </div>
 

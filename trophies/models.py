@@ -1,3 +1,4 @@
+from email.policy import default
 from django.db import models
 from typing import Callable
 from cloudinary.models import CloudinaryField
@@ -9,7 +10,7 @@ from django.core.validators import MaxValueValidator
 
 class Projects(models.Model):
     name = models.CharField(max_length=100)
-    image = CloudinaryField('image')
+    image = CloudinaryField('image/', default='')
     design = models.IntegerField(default=0)
     usability = models.IntegerField(default=0)
     content = models.IntegerField(default=0)
